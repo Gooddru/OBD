@@ -15,7 +15,7 @@
 - **1:1** | `Channel` -> `Channel_Statistics` (один канал — один набор статистики).
 - **1:M** | `Account` ↔ `Channel` (один аккаунт — множество каналов).
 - **1:M** | `Channel` ↔ `Video` (один канал — множество видео).
-- **1:M** | `Channel` ↔ `Comment` / `Video` ↔ `Comment`.
+- **1:M** | `Channel` ↔ `Comment` / `Video` ↔ `Commgit push origin mainent`.
 - **M:N** | `Channel` ↔ `Channel` (подписки).
 - **M:N** | `Channel` ↔ `Video` (лайки).
 - **M:N** | `Channel` ↔ `Channel` с атрибутом (роли: *creator, moderator, user*).
