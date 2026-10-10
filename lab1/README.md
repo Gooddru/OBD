@@ -36,7 +36,7 @@
 
 Ограничения целостности (`UNIQUE`, `CHECK`, `NOT NULL`) и внешние ключи реализованы средствами PostgreSQL.
 
-👉 **[Смотреть исходный DDL-скрипт (init.sql)](lab1/src/init.sql)**
+👉 **[Смотреть исходный DDL-скрипт (init.sql)](src/init.sql)**
 
 ---
 
