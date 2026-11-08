@@ -3,7 +3,6 @@ DROP TABLE IF EXISTS student CASCADE;
 DROP TABLE IF EXISTS course CASCADE;
 DROP TABLE IF EXISTS "group" CASCADE;
 
--- 2. Создание таблиц
 CREATE TABLE "group"
 (
     id   SERIAL PRIMARY KEY,
@@ -31,7 +30,6 @@ CREATE TABLE course_listeners
     PRIMARY KEY (student_id, course_id)
 );
 
--- 3. Заполнение расширенными данными
 INSERT INTO "group" (code)
 VALUES ('ИСП-21'),
        ('ИСП-22'),
