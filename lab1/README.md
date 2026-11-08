@@ -15,13 +15,13 @@
 - **1:1** | `Channel` -> `Channel_Statistics` (один канал — один набор статистики).
 - **1:M** | `Account` ↔ `Channel` (один аккаунт — множество каналов).
 - **1:M** | `Channel` ↔ `Video` (один канал — множество видео).
-- **1:M** | `Channel` ↔ `Comment` / `Video` ↔ `Commgit push origin mainent`.
+- **1:M** | `Channel` ↔ `Comment` / `Video` ↔ `Comment`.
 - **M:N** | `Channel` ↔ `Channel` (подписки).
 - **M:N** | `Channel` ↔ `Video` (лайки).
 - **M:N** | `Channel` ↔ `Channel` с атрибутом (роли: *creator, moderator, user*).
 
 <p align="center">
-  <img src="image/schema.jpg" alt="ER-диаграмма БД" width="800"><br>
+  <img src="images/schema.jpg" alt="ER-диаграмма БД" width="800"><br>
   <em>Рис. 1. Схема базы данных видеоплатформы (ER-модель)</em>
 </p>
 
@@ -36,7 +36,7 @@
 
 Ограничения целостности (`UNIQUE`, `CHECK`, `NOT NULL`) и внешние ключи реализованы средствами PostgreSQL.
 
-👉 **[Смотреть исходный DDL-скрипт (init.sql)](src/init.sql)**
+👉 **[Смотреть исходный DDL-скрипт (schema.sql)](sql/schema.sql)**
 
 ---
 

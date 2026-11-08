@@ -9,7 +9,7 @@
 
 - [Исходные данные](data/data.sql) — DDL и тестовые записи для таблиц `group`,
 	`student`, `course` и `course_listeners`.
-- [SQL-запрос](src/hw_03_joins_Babich_Aleksandr.sql) — итоговый запрос и
+- [SQL-запрос](sql/joins.sql) — итоговый запрос и
 	пояснение выбранных соединений.
 
 ## Запуск
@@ -19,14 +19,14 @@
 
 ```sql
 \i lab3/data/data.sql
-\i lab3/src/hw_03_joins_Babich_Aleksandr.sql
+\i lab3/sql/joins.sql
 ```
 
 Либо запустите те же файлы через `psql`:
 
 ```bash
 psql -d <имя_базы> -f lab3/data/data.sql
-psql -d <имя_базы> -f lab3/src/hw_03_joins_Babich_Aleksandr.sql
+psql -d <имя_базы> -f lab3/sql/joins.sql
 ```
 
 ## Описание запроса

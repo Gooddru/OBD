@@ -8,10 +8,10 @@
 
 ## Файлы
 
-- [Описание структуры базы](data/init_db.sql) — таблицы групп, студентов,
+- [Описание структуры базы](data/schema.sql) — таблицы групп, студентов,
 	студенческих карт, курсов, слушателей и оценок.
 - [Тестовые данные](data/data.sql) — группы, студенты, записи на курсы и оценки.
-- [SQL-запрос](src/hw_04_Babich_Aleksandr.sql) — итоговый аналитический запрос.
+- [SQL-запрос](sql/cte_subqueries.sql) — итоговый аналитический запрос.
 
 ## Запуск
 
@@ -19,17 +19,17 @@
 данные, а затем запустите запрос:
 
 ```sql
-\i lab4/data/init_db.sql
+\i lab4/data/schema.sql
 \i lab4/data/data.sql
-\i lab4/src/hw_04_Babich_Aleksandr.sql
+\i lab4/sql/cte_subqueries.sql
 ```
 
 Через командную строку последовательность выглядит так:
 
 ```bash
-psql -d <имя_базы> -f lab4/data/init_db.sql
+psql -d <имя_базы> -f lab4/data/schema.sql
 psql -d <имя_базы> -f lab4/data/data.sql
-psql -d <имя_базы> -f lab4/src/hw_04_Babich_Aleksandr.sql
+psql -d <имя_базы> -f lab4/sql/cte_subqueries.sql
 ```
 
 ## Логика решения
